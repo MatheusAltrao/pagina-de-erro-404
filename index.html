@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 404</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF725E',
+                        background: '#FCFEFD'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background w-full max-w-[1130px] mx-auto p-4 lg:p-12 h-screen grid grid-rows-[auto_1fr_auto] gap-7">
+    <header class="flex items-center justify-between">
+        <div class="flex items-center gap-1">
+            <img src="./assets/icons/logo.svg" alt="logo">
+            <h1>CodeSpace</h1>
+        </div>
+
+
+        <img class="block lg:hidden" src="./assets/icons/menu.svg" alt="menu">
+
+        <nav class="hidden lg:block">
+            <ul class="flex items-center gap-7">
+                <li class="hover:underline underline-offset-4">Home</li>
+                <li class="hover:underline underline-offset-4">Sobre nós</li>
+                <li class="hover:underline underline-offset-4">Suporte</li>
+                <li class="hover:underline underline-offset-4">Fale conosco</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex items-center flex-col lg:flex-row  lg:justify-between gap-16">
+
+        <div class="w-full max-w-[629px] h-[255px] lg:h-[422px]">
+            <img class="w-full h-full " src="./assets/image.png" alt="Imagem de erro 404">
+        </div>
+
+        <div class="flex flex-col gap-5 lg:gap-3 text-center lg:text-left">
+            <span class="text-4xl font-semibold">Opa!</span>
+            <span class=" text-lg lg:text-2xl font-semibold ">Não encontramos essa página</span>
+            <span class="lg:text-xl text-base leading-6">Se você se perdeu no espaço, não se preocupe, tente voltar para
+                a
+                página
+                inicial</span>
+            <div class="flex items-center flex-col justify-center lg:flex-row gap-2 lg:justify-between">
+                <button
+                    class="text-sm bg-primary py-2 px-3 rounded-lg font-medium hover:opacity-90 transition-opacity">Voltar
+                    para Home</button>
+                <button class="font-medium text-primary hover:underline underline-offset-4">Visite nossa central de
+                    ajuda</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="flex items-center flex-col gap-4 lg:flex-row lg:justify-between">
+
+        <span class="text-sm">www.codespace.com.br</span>
+
+        <div class="flex items-center flex-col lg:flex-row gap-3 lg:gap-10">
+            <span>Siga-nos nas redes sociais</span>
+
+            <div class="flex items-center gap-7 ">
+                <img src="./assets/icons/whatsap.svg" alt="">
+                <img src="./assets/icons/facebook.svg" alt="">
+                <img src="./assets/icons/linkedin.svg" alt="">
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
